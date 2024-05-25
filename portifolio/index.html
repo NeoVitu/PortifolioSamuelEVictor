@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Portfólio - Victor e Samuel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #16FF00;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        section:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+        h2 {
+            color: #16FF00;
+            margin-bottom: 1rem;
+        }
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 2rem;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        form input, form button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        form input:focus, form textarea:focus {
+            border-color: #16FF00;
+            outline: none;
+        }
+        form button {
+            background-color: #16FF00;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        form button:hover {
+            background-color: #14e600;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfólio - Victor e Samuel</h1>
+        <nav>
+            <a href="#home">Página Inicial</a>
+            <a href="#about">Sobre Nós</a>
+            <a href="#works">Nossos Trabalhos</a>
+            <a href="#social">Nos Acompanhe</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindos ao Nosso Portfólio!</h2>
+        <p>Estamos empolgados em compartilhar nosso trabalho com vocês. Aqui você encontrará informações sobre nós e nossos projetos.</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos Victor e Samuel, dois amigos incentivados por design e desenvolvimento. Trabalhamos juntos em diversos projetos criativos, sempre buscando inovar e entregar resultados de alta qualidade. Esse portifólio foi feito para um trabalho escolar, em específico, para o centro educacional Desafio, nossos nomes são: Victor Hugo Meira Nascimento Nº39 e Samuel Ferreira França Nº38 TIC2 </p>
+    </section>
+
+    <section id="works">
+        <h2>Nossos Trabalhos</h2>
+        <div class="gallery">
+            <img src="https://i.pinimg.com/originals/8f/60/67/8f60670f954c0aa001d36bea54861cdd.png" alt="Trabalho 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfo-ftWQFgkpjuqr6HCCsTiTylV66gsHQL2jM_ixFBA&s" alt="Trabalho 2">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/935adc153384225.632e9374036a5.jpg" alt="Trabalho 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxoLd7hxOPoa9GaNCVVNUjBbMOWmWUMWheoJDt6GQuVg&s" alt="Trabalho 4">
+        </div>
+    </section>
+
+    <section id="social">
+        <h2>Nos Acompanhe nas Redes Sociais</h2>
+        <p>Fique por dentro das nossas novidades seguindo nosso Instagram!</p>
+        <p><a href="https://instagram.com" target="_blank">Instagram</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="https://example.com/form-submit" method="POST">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <input type="tel" name="phone" placeholder="Seu Telefone" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Victor e Samuel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
